@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+body:hover{
+    animation: color-cycle 1s linear infinite;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    margin-bottom: 50px;
+}
+
+form{
+    max-width: 100%;
+    width: 400px;
+}
+
+.input{
+    display: block;
+    width:100%;
+    
+}
+
+.todos{
+    padding: 0;
+    margin: 0;
+}
+
+.todos li{
+    cursor: pointer;
+}
+
+button[type="submit"]{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: black;
+    color: #fff;
+    text-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    animation: color-cycle 1s linear infinite;
+    animation: rotate-infinity 1s linear infinite;
+}
+
+li{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+li:hover{
+    animation: rotate-infinity 1s linear infinite;
+}
+
+li button:hover{
+    background-color: black;
+    color: #fff;
+    text-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    animation: color-cycle 1s linear infinite;
+    animation: rotate-infinity 1s linear infinite;
+}
+
+@keyframes color-cycle {
+    0%{
+        background-color: red;
+    }   
+    25%{
+        background-color: yellow;
+    } 
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: cyan;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+@keyframes rotate-infinity {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+input:hover{
+    box-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    animation: color-cycle 1s linear infinite;
+    animation: rotate-infinity 1s linear infinite;
+}
+
+header{
+    text-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+header:hover{
+    animation: color-cycle 1s linear infinite;
+    animation: rotate-infinity 1s linear infinite;
+}

@@ -73,7 +73,6 @@ li button{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    
 }
 
 li:hover{
@@ -131,6 +130,21 @@ header{
 }
 
 header:hover{
+    animation: color-cycle 1s linear infinite;
+    animation: rotate-infinity 1s linear infinite;
+}
+
+.mute{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mute:hover{
+    background-color: black;
+    box-shadow: 1px 1px #ff0022, -1px -1px #00ffed;
+    color: #fff;
     animation: color-cycle 1s linear infinite;
     animation: rotate-infinity 1s linear infinite;
 }

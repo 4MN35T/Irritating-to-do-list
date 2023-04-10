@@ -14,6 +14,17 @@
             <input type="text" class="input" id="input" placeholder="Todo" >
             <button id="adds" type="submit">Add</button>
             <ul class="todo" id="todo"></ul>
+            <audio id="myAudio" autoplay loop>
+                <source src="Bioshock Infinite Music - After You_ve Gone (1918)(MP3_160K)(MP3_160K).mp3" type="audio/mpeg">
+              </audio>
+              <button class="mute" onclick="toggleMute()">Mute</button>
+    
+    <script>
+    function toggleMute() {
+      var audio = document.getElementById("myAudio");
+      audio.muted = !audio.muted;
+    }
+    </script>
         </form>
     </h1>
     <script src="brain.js"></script>
